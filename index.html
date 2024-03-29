@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                body: "",
+              },
+              container: {
+                center: true,
+              },
+            },
+          },
+        };
+      </script>
+  </head>
+  <body>
+    <div class="w-[350px] mx-auto border border-gray-300 rounded-lg px-[15px] p-[15px] mt-[50px]">
+      <div class="mt-[15px]">
+        <input value="0" disabled id="display" class="h-[50px] rounded-lg px-3 text-right bg-gray-800 text-white w-full text-xl" type="text">
+      </div>
+      <div class="grid grid-cols-4 gap-[15px] m-[15px] gird-rows-5" id="Calculate">
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">+</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">-</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">&times;</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">&divide;</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">7</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">8</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">9</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">4</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">5</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">6</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">1</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">2</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">3</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">0</button>
+        <button class="h-[50px] rounded-lg text-xl bg-gray-200">.</button>
+        <button class="h-[50px] rounded-lg text-xl bg-red-500 text-white">AC</button>
+        <button class="h-[full] rounded-lg text-xl bg-blue-500 text-white col-start-4 row-start-2 row-end-6">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+  </body>
+</html>
