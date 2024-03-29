@@ -31,26 +31,26 @@
   <body>
     <div class="w-[350px] mx-auto border border-gray-300 rounded-lg px-[15px] p-[15px] mt-[50px]">
       <div class="mt-[15px]">
-        <input value="0" disabled id="display" class="h-[50px] rounded-lg px-3 text-right bg-gray-800 text-white w-full text-xl" type="text">
+        <input  disabled id="display" class="h-[50px] rounded-lg px-3 text-right bg-gray-800 text-white w-full text-xl" type="text">
       </div>
-      <div class="grid grid-cols-4 gap-[15px] m-[15px] gird-rows-5" id="Calculate">
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">+</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">-</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">&times;</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">&divide;</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">7</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">8</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">9</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">4</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">5</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">6</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">1</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">2</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">3</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">0</button>
-        <button class="h-[50px] rounded-lg text-xl bg-gray-200">.</button>
-        <button class="h-[50px] rounded-lg text-xl bg-red-500 text-white">AC</button>
-        <button class="h-[full] rounded-lg text-xl bg-blue-500 text-white col-start-4 row-start-2 row-end-6">=</button>
+      <div class="grid grid-cols-4 gap-[15px] my-[15px] gird-rows-5" id="calculate">
+        <button value="+" class="h-[50px] rounded-lg text-xl bg-gray-200 operator">+</button>
+        <button value="-" class="h-[50px] rounded-lg text-xl bg-gray-200 operator">-</button>
+        <button value="*" class="h-[50px] rounded-lg text-xl bg-gray-200 operator">&times;</button>
+        <button value="/" class="h-[50px] rounded-lg text-xl bg-gray-200 operator">&divide;</button>
+        <button value="7" class="h-[50px] rounded-lg text-xl bg-gray-200">7</button>
+        <button value="8" class="h-[50px] rounded-lg text-xl bg-gray-200">8</button>
+        <button value="9" class="h-[50px] rounded-lg text-xl bg-gray-200">9</button>
+        <button value="4" class="h-[50px] rounded-lg text-xl bg-gray-200">4</button>
+        <button value="5" class="h-[50px] rounded-lg text-xl bg-gray-200">5</button>
+        <button value="6" class="h-[50px] rounded-lg text-xl bg-gray-200">6</button>
+        <button value="1" class="h-[50px] rounded-lg text-xl bg-gray-200">1</button>
+        <button value="2" class="h-[50px] rounded-lg text-xl bg-gray-200">2</button>
+        <button value="3" class="h-[50px] rounded-lg text-xl bg-gray-200">3</button>
+        <button value="0" class="h-[50px] rounded-lg text-xl bg-gray-200">0</button>
+        <button value="." class="h-[50px] rounded-lg text-xl bg-gray-200 dot">.</button>
+        <button value="clear" class="h-[50px] rounded-lg text-xl bg-red-500 text-white clear">AC</button>
+        <button value="=" class="h-[full] rounded-lg text-xl bg-blue-500 text-white col-start-4 row-start-2 row-end-6 operator">=</button>
       </div>
     </div>
     <script src="./script.js"></script>
