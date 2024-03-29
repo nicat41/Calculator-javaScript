@@ -29,6 +29,13 @@ let clearDisplay = () => {
   displayNUmber = 0;
 
 }
+
+let dotDisplay = (value) => {
+  if(!displayNUmber.includes(value)) {
+    displayNUmber += value;
+  }
+}
+
 ////////////// butun buttonlarti saglayan ana divdir calculate 
 calculate.addEventListener("click", e => {
   if(e.target.matches("Button")) {
@@ -41,7 +48,9 @@ calculate.addEventListener("click", e => {
       console.log("operator")
     }
     else if(e.target.classList.contains("dot")) {
-      console.log("dot")
+     dotDisplay(value)
+     displayView()
+
       ////////// deyilir ki classlar icerinde hansi classda noqte tabilarsa onu console.log() gosder;
 
     }
