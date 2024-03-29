@@ -11,8 +11,14 @@ const displayView = () => {
 displayView()
 
 
+let updateDisplay = (value) => {
+  if(displayNUmber === 0) displayNUmber = value;
+  else  displayNUmber += value;
+}
+
 calculate.addEventListener("click", e => {
   if(e.target.matches("Button")) {
+    let value = e.target.value;
     if(e.target.classList.contains("operator")) {
       console.log("operator")
     }
@@ -24,6 +30,8 @@ calculate.addEventListener("click", e => {
     }
     else {
       console.log("button")
+      updateDisplay(value)
+      displayView()
     }
   }
 
